@@ -1,0 +1,450 @@
+<!DOCTYPE html><html><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>index.html</title>
+
+  <style>css .menu-etapas { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; max-width: 1000px; margin: 40px auto 40px auto; }.menu-etapas button { background: rgb(23, 43, 58); color: rgb(227, 193, 125); border: 2px solid rgb(178, 139, 69); padding: 20px; border-radius: 10px; font: 16px Georgia, serif; cursor: pointer; transition: initial 0.3s initial initial; }.menu-etapas button:hover { background: rgb(178, 139, 69); color: white; transform: translateY(-5px); }.pagina-etapa { display: none; max-width: 950px; margin: 40px auto 40px auto; background: rgb(255, 253, 248); padding: 35px; border-radius: 15px; box-shadow: 0 5px 20px rgb(0, 0, 0); }.pagina-etapa.activa { display: block; }.pagina-etapa h2 { color: rgb(23, 53, 74); text-align: center; margin: 20px 0 20px 0; }.pagina-etapa img { display: block; width: 100%; max-height: 400px; object-fit: cover; border-radius: 10px; margin: 25px auto 25px auto; }.pagina-etapa p { text-align: justify; margin: 20px 0 20px 0; }.pagina-etapa button { background: rgb(23, 43, 58); color: rgb(227, 193, 125); border: none; padding: 13px 20px 13px 20px; margin: 10px 5px 0 0; border-radius: 7px; cursor: pointer; font: 15px Georgia, serif; transition: initial 0.3s initial initial; }.pagina-etapa button:hover { background: rgb(178, 139, 69); color: white; transform: translateY(-3px); }@keyframes aparecerPagina{  }body.oscuro .pagina-etapa { background: rgb(38, 55, 70); color: white; }body.oscuro .pagina-etapa h2 { color: rgb(227, 193, 125); }@media (max-width: 650px) { .menu-etapas { grid-template-columns: 1fr; }.pagina-etapa { padding: 20px; }.pagina-etapa img { max-height: 250px; } }</style>
+
+  
+</head>
+<body>
+  <section class="historia" id="historia">
+  <h2>La vida de Blas de Lezo</h2>
+
+  <p class="introduccion">
+    Descubre la vida del almirante Blas de Lezo a través de sus diez etapas
+    históricas. Pulsa en cada botón para acceder a una etapa diferente.
+  </p>
+
+  <!-- MENÚ DE ETAPAS -->
+
+  <div id="menuEtapas" class="menu-etapas">
+    <button onclick="mostrarEtapa(1)">1. Nacimiento e infancia</button>
+    <button onclick="mostrarEtapa(2)">2. Entrada en la Armada</button>
+    <button onclick="mostrarEtapa(3)">3. Pérdida de un ojo</button>
+    <button onclick="mostrarEtapa(4)">4. Captura del Stanhope</button>
+    <button onclick="mostrarEtapa(5)">5. Carrera militar</button>
+    <button onclick="mostrarEtapa(6)">6. América y familia</button>
+    <button onclick="mostrarEtapa(7)">7. Expedición de Orán</button>
+    <button onclick="mostrarEtapa(8)">8. Cartagena de Indias</button>
+    <button onclick="mostrarEtapa(9)">9. Gran batalla de 1741</button>
+    <button onclick="mostrarEtapa(10)">10. Fallecimiento y legado</button>
+  </div>
+
+  <!-- ETAPA 1 -->
+
+  <div class="pagina-etapa" id="pagina1">
+    <span class="fecha">1689 - 1701</span>
+
+    <h2>1. Nacimiento e infancia</h2>
+
+    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Blas_de_Lezo_Olabarrieta,_Espainiako_itsas_armadako_teniente_orokorra.jpg" alt="Monumento dedicado a Blas de Lezo" loading="lazy">
+
+    <p>
+      Blas de Lezo y Olavarrieta nació el 3 de febrero de 1689 en Pasajes de San
+      Pedro, Guipúzcoa. Procedía de una familia vinculada al mundo marítimo.
+    </p>
+
+    <p>
+      Desde pequeño estuvo relacionado con el mar, los barcos y la navegación.
+      Su entorno familiar influyó en su decisión de dedicarse a la Armada.
+    </p>
+
+    <p>
+      Durante su juventud recibió formación naval y comenzó a prepararse para
+      desarrollar una carrera militar.
+    </p>
+
+    <button onclick="volverMenu()">Volver a las etapas</button>
+    <button onclick="mostrarEtapa(2)">Siguiente etapa →</button>
+  </div>
+
+  <!-- ETAPA 2 -->
+
+  <div class="pagina-etapa" id="pagina2">
+    <span class="fecha">1701 - 1704</span>
+
+    <h2>2. Entrada en la Armada</h2>
+
+    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/La_captura_del_Stanhope.jpg" alt="Pintura de un combate naval" loading="lazy">
+
+    <p>
+      Con aproximadamente doce años comenzó su formación como guardiamarina
+      durante la Guerra de Sucesión Española.
+    </p>
+
+    <p>
+      En 1704 participó en la batalla naval de Vélez-Málaga, uno de los grandes
+      enfrentamientos marítimos de aquella guerra.
+    </p>
+
+    <p>
+      Durante el combate una bala de cañón le destrozó la pierna izquierda. La
+      gravedad de sus heridas obligó a los médicos a amputársela.
+    </p>
+
+    <p>
+      A pesar de su juventud y de la gravedad de la lesión, decidió continuar su
+      carrera en la Armada.
+    </p>
+
+    <button onclick="volverMenu()">Volver a las etapas</button>
+    <button onclick="mostrarEtapa(1)">← Etapa anterior</button>
+    <button onclick="mostrarEtapa(3)">Siguiente etapa →</button>
+  </div>
+
+  <!-- ETAPA 3 -->
+
+  <div class="pagina-etapa" id="pagina3">
+    <span class="fecha">1705 - 1710</span>
+
+    <h2>3. La pérdida de un ojo</h2>
+
+    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Blas_de_Lezo_Olabarrieta,_el_almirante_invicto.jpg" alt="Retrato de Blas de Lezo" loading="lazy">
+
+    <p>
+      Después de recuperarse de sus heridas, Blas de Lezo volvió a participar en
+      diferentes operaciones militares.
+    </p>
+
+    <p>
+      En 1707, durante las operaciones relacionadas con el asedio de Tolón,
+      recibió una herida que le provocó la pérdida del ojo izquierdo.
+    </p>
+
+    <p>
+      A pesar de haber perdido una pierna y un ojo, continuó demostrando sus
+      capacidades como marino.
+    </p>
+
+    <p>
+      Su valentía y experiencia hicieron que sus superiores reconocieran su
+      capacidad militar.
+    </p>
+
+    <button onclick="volverMenu()">Volver a las etapas</button>
+    <button onclick="mostrarEtapa(2)">← Etapa anterior</button>
+    <button onclick="mostrarEtapa(4)">Siguiente etapa →</button>
+  </div>
+
+  <!-- ETAPA 4 -->
+
+  <div class="pagina-etapa" id="pagina4">
+    <span class="fecha">1710 - 1714</span>
+
+    <h2>4. La captura del Stanhope y Barcelona</h2>
+
+    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Blas_de_Lezo,_Castillo_de_San_Felipe_de_Barajas.jpg" alt="Monumento a Blas de Lezo" loading="lazy">
+
+    <p>
+      En 1710 destacó por sus operaciones contra los barcos enemigos. Una de sus
+      acciones más conocidas fue la captura del navío inglés Stanhope.
+    </p>
+
+    <p>
+      También participó en el asedio de Barcelona durante la Guerra de Sucesión
+      Española.
+    </p>
+
+    <p>
+      En aquellos enfrentamientos sufrió una grave herida en el brazo derecho
+      que le dejó importantes secuelas.
+    </p>
+
+    <p>
+      Debido a las lesiones que había sufrido, perdió una pierna, un ojo y parte
+      de la movilidad de un brazo. Por ello recibió el apodo de «Mediohombre».
+    </p>
+
+    <button onclick="volverMenu()">Volver a las etapas</button>
+    <button onclick="mostrarEtapa(3)">← Etapa anterior</button>
+    <button onclick="mostrarEtapa(5)">Siguiente etapa →</button>
+  </div>
+
+  <!-- ETAPA 5 -->
+
+  <div class="pagina-etapa" id="pagina5">
+    <span class="fecha">1715 - 1720</span>
+
+    <h2>5. Consolidación de su carrera militar</h2>
+
+    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Blas_de_Lezo_Olabarrieta,_un_h%C3%A9roe_maltratado_por_la_historia.jpg" alt="Retrato histórico de Blas de Lezo" loading="lazy">
+
+    <p>
+      Después de la Guerra de Sucesión Española, continuó trabajando para la
+      Armada.
+    </p>
+
+    <p>
+      Su experiencia en diferentes enfrentamientos navales le permitió asumir
+      nuevas responsabilidades.
+    </p>
+
+    <p>
+      Participó en operaciones destinadas a proteger los intereses españoles y
+      las rutas comerciales.
+    </p>
+
+    <p>
+      Su capacidad de mando y sus conocimientos de navegación fueron
+      fundamentales para su progresión militar.
+    </p>
+
+    <button onclick="volverMenu()">Volver a las etapas</button>
+    <button onclick="mostrarEtapa(4)">← Etapa anterior</button>
+    <button onclick="mostrarEtapa(6)">Siguiente etapa →</button>
+  </div>
+
+  <!-- ETAPA 6 -->
+
+  <div class="pagina-etapa" id="pagina6">
+    <span class="fecha">1720 - 1730</span>
+
+    <h2>6. América y su vida familiar</h2>
+
+    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Lima_in_1750.jpg" alt="Vista histórica de Lima" loading="lazy">
+
+    <p>
+      En 1720 fue destinado a América y desarrolló una parte importante de su
+      carrera en el océano Pacífico.
+    </p>
+
+    <p>
+      En 1723 recibió el mando de la Escuadra del Mar del Sur, con la misión de
+      proteger las rutas comerciales y combatir a los corsarios.
+    </p>
+
+    <p>
+      Durante esta etapa vivió en Lima y contrajo matrimonio con Josefa Mónica
+      Pacheco.
+    </p>
+
+    <p>
+      El matrimonio tuvo siete hijos. Blas de Lezo consiguió combinar su vida
+      familiar con sus responsabilidades militares.
+    </p>
+
+    <button onclick="volverMenu()">Volver a las etapas</button>
+    <button onclick="mostrarEtapa(5)">← Etapa anterior</button>
+    <button onclick="mostrarEtapa(7)">Siguiente etapa →</button>
+  </div>
+
+  <!-- ETAPA 7 -->
+
+  <div class="pagina-etapa" id="pagina7">
+    <span class="fecha">1730 - 1734</span>
+
+    <h2>7. Regreso a España y expedición de Orán</h2>
+
+    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Blas_de_Lezo_Olabarrieta,el_defensor_de_Cartagena_de_Indias..jpg" alt="Estatua dedicada a Blas de Lezo" loading="lazy">
+
+    <p>
+      En 1730 regresó a España y recibió el mando de la Escuadra del
+      Mediterráneo.
+    </p>
+
+    <p>
+      En 1731 participó en una expedición a Génova, defendiendo los intereses
+      españoles.
+    </p>
+
+    <p>
+      En 1732 participó en la expedición de Orán, una operación militar
+      destinada a recuperar esta importante plaza norteafricana.
+    </p>
+
+    <p>
+      En 1734 alcanzó el empleo de teniente general de la Armada, uno de los
+      rangos más importantes de la marina española.
+    </p>
+
+    <button onclick="volverMenu()">Volver a las etapas</button>
+    <button onclick="mostrarEtapa(6)">← Etapa anterior</button>
+    <button onclick="mostrarEtapa(8)">Siguiente etapa →</button>
+  </div>
+
+  <!-- ETAPA 8 -->
+
+  <div class="pagina-etapa" id="pagina8">
+    <span class="fecha">1735 - 1737</span>
+
+    <h2>8. Llegada a Cartagena de Indias</h2>
+
+    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Castillo_San_Felipe_de_Barajas_CTg_11_2019_3157.jpg" alt="Castillo de San Felipe de Barajas" loading="lazy">
+
+    <p>
+      En 1737 llegó a Cartagena de Indias, una de las ciudades más importantes
+      del imperio español en América.
+    </p>
+
+    <p>
+      Su puerto tenía una enorme importancia para el comercio entre España y
+      América.
+    </p>
+
+    <p>
+      Blas de Lezo estudió las fortificaciones y los accesos marítimos de la
+      ciudad para mejorar su defensa.
+    </p>
+
+    <p>
+      La tensión entre España y Gran Bretaña hacía prever un posible ataque
+      británico.
+    </p>
+
+    <button onclick="volverMenu()">Volver a las etapas</button>
+    <button onclick="mostrarEtapa(7)">← Etapa anterior</button>
+    <button onclick="mostrarEtapa(9)">Siguiente etapa →</button>
+  </div>
+
+  <!-- ETAPA 9 -->
+
+  <div class="pagina-etapa" id="pagina9">
+    <span class="fecha">1741</span>
+
+    <h2>9. La gran batalla de Cartagena de Indias</h2>
+
+    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Defensa_de_Cartagena_de_Indias_por_la_escuadra_de_D._Blas_de_Lezo,_a%C3%B1o_1741.jpg" alt="Defensa de Cartagena de Indias en 1741" loading="lazy">
+
+    <p>
+      En marzo de 1741 comenzó el gran ataque británico contra Cartagena de
+      Indias, dirigido por el almirante Edward Vernon.
+    </p>
+
+    <p>Blas de Lezo organizó la defensa junto al virrey Sebastián de Eslava.</p>
+
+    <p>
+      Los españoles utilizaron las fortificaciones y su conocimiento del terreno
+      para resistir los ataques enemigos.
+    </p>
+
+    <p>
+      Finalmente, la expedición británica tuvo que retirarse sin conquistar la
+      ciudad.
+    </p>
+
+    <p>
+      Esta victoria convirtió a Blas de Lezo en uno de los grandes protagonistas
+      de la historia naval.
+    </p>
+
+    <button onclick="volverMenu()">Volver a las etapas</button>
+    <button onclick="mostrarEtapa(8)">← Etapa anterior</button>
+    <button onclick="mostrarEtapa(10)">Siguiente etapa →</button>
+  </div>
+
+  <!-- ETAPA 10 -->
+
+  <div class="pagina-etapa" id="pagina10">
+    <span class="fecha">1741</span>
+
+    <h2>10. Fallecimiento y legado histórico</h2>
+
+    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Statue_of_Blas_de_Lezo,_Cartagena.jpg" alt="Estatua de Blas de Lezo en Cartagena" loading="lazy">
+
+    <p>
+      Después de la victoria de Cartagena de Indias, la salud de Blas de Lezo
+      empeoró considerablemente.
+    </p>
+
+    <p>
+      Las enfermedades se habían extendido durante el asedio y afectaron a
+      numerosos soldados y habitantes de la ciudad.
+    </p>
+
+    <p>
+      Blas de Lezo falleció el 7 de septiembre de 1741 en Cartagena de Indias, a
+      los 52 años.
+    </p>
+
+    <p>
+      Aunque no se conoce con certeza la causa exacta de su muerte, su
+      fallecimiento se produjo después de los difíciles meses del asedio.
+    </p>
+
+    <h3>Su legado</h3>
+
+    <p>
+      Actualmente es recordado como uno de los grandes marinos de la historia de
+      España.
+    </p>
+
+    <p>
+      Su vida representa la valentía, la perseverancia y la capacidad de superar
+      enormes dificultades.
+    </p>
+
+    <button onclick="volverMenu()">Volver a todas las etapas</button>
+    <button onclick="mostrarEtapa(9)">← Etapa anterior</button>
+  </div>
+</section>
+
+<!-- JAVASCRIPT DE NAVEGACIÓN -->
+
+<script>
+
+  function mostrarEtapa(numero) {
+
+      // Ocultar todas las páginas
+      document.querySelectorAll(".pagina-etapa").forEach(pagina => {
+          pagina.classList.remove("activa");
+      });
+
+      // Mostrar la etapa seleccionada
+      const pagina = document.getElementById("pagina" + numero);
+
+      if (!pagina) return;
+
+      pagina.classList.add("activa");
+
+      // Marcar el botón seleccionado
+      document.querySelectorAll(".menu-etapas button").forEach(boton => {
+          boton.classList.remove("seleccionado");
+      });
+
+      const botones = document.querySelectorAll(".menu-etapas button");
+
+      if (botones[numero - 1]) {
+          botones[numero - 1].classList.add("seleccionado");
+      }
+
+      // Desplazarse hasta la etapa
+      pagina.scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+      });
+
+  }
+
+
+  function volverMenu() {
+
+      // Ocultar todas las etapas
+      document.querySelectorAll(".pagina-etapa").forEach(pagina => {
+          pagina.classList.remove("activa");
+      });
+
+      // Quitar selección
+      document.querySelectorAll(".menu-etapas button").forEach(boton => {
+          boton.classList.remove("seleccionado");
+      });
+
+      // Volver al menú
+      document.getElementById("menuEtapas").scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+      });
+
+  }
+</script>
+
+
+  <script>
+    javascript
+
+
+
+  </script>
+
+
+</body></html>
